@@ -1,0 +1,131 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e5eafc);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.controls {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.upload-section {
+  width: 100%;
+}
+
+.upload-section input[type="file"] {
+  width: 100%;
+  padding: 1rem;
+  border: 2px dashed #ccc;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  background: white;
+  box-sizing: border-box;
+}
+
+.mode-buttons {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.mode-buttons button {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #aabbee;
+  background: #f0f4ff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  white-space: nowrap; /* Prevent breaking like in your screenshot */
+}
+
+.mode-buttons button.active {
+  background: #5f5fff;
+  color: white;
+}
+
+.mode-buttons button:hover {
+  background: #d6e0ff;
+}
+
+.process-button {
+  width: 100%;
+  padding: 1rem;
+  background: #5f5fff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.process-button:hover {
+  background: #4c4cff;
+}
+
+.error {
+  background: #ffe5e5;
+  color: #d10000;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.result-box {
+  width: 100%;
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.result-box pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.page {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  min-height: 300px;
+}
